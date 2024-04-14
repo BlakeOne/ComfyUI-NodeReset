@@ -1,7 +1,7 @@
 import { app } from "../../scripts/app.js";
 
 app.registerExtension({
-	name: "ComfyUI.NodeDefaults",
+	name: "ComfyUI.NodeReset",
 	setup() {
 		const defaultWidgets = {};
 		const orig = LGraphCanvas.prototype.getNodeMenuOptions;
