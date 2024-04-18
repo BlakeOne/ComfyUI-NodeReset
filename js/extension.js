@@ -8,7 +8,7 @@ app.registerExtension({
         LGraphCanvas.prototype.getNodeMenuOptions = function(node) {
 			const options = orig.call(this, node);
 			options.push(null, {				
-				content: "Restore default values",
+				content: "Reset",
 				callback: () => {
 					if (!defaultWidgets[node.type]) {
 						defaultWidgets[node.type] = LiteGraph.createNode(node.type, node.name, node.options).widgets;
