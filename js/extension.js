@@ -16,6 +16,9 @@ app.registerExtension({
 					defaultWidgets[node.type].forEach(defaultWidget => {
 						const widget = node.widgets.find(widget => widget.name === defaultWidget.name);
 						if (widget) {
+							widget = widget.widget ?? widget;
+							defaultWidget = defaultWidget.widget ?? defaultWidget;
+
 							widget.value = defaultWidget.value;
 							if (widget.options && widget.options.property && node.properties[widget.options.property] !== undefined) {
 								node.setProperty(widget.options.property, widget.value);
