@@ -14,7 +14,7 @@ app.registerExtension({
 						defaultWidgets[node.type] = LiteGraph.createNode(node.type, node.name, node.options).widgets;
 					}
 					defaultWidgets[node.type].forEach(defaultWidget => {
-						const widget = node.widgets.find(widget => widget.name === defaultWidget.name);
+						let widget = node.widgets.find(widget => widget.name === defaultWidget.name);
 						if (widget) {
 							widget = widget.widget ?? widget;
 							defaultWidget = defaultWidget.widget ?? defaultWidget;
