@@ -23,7 +23,7 @@ app.registerExtension({
 							if (widget.options && widget.options.property && node.properties[widget.options.property] !== undefined) {
 								node.setProperty(widget.options.property, widget.value);
 							}
-							if (widget.callback) {
+							if (widget.callback && widget.callback.length <= 3) {
 								widget.callback(widget.value, this, node);
 							}							
 						}
