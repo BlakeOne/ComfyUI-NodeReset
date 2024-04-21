@@ -7,6 +7,10 @@ app.registerExtension({
 		const orig = LGraphCanvas.prototype.getNodeMenuOptions;
         LGraphCanvas.prototype.getNodeMenuOptions = function(node) {
 			const options = orig.call(this, node);
+			if (!node.widgets) {
+				return options;
+			}
+			
 			options.push(null, {				
 				content: "Reset",
 				callback: () => {
