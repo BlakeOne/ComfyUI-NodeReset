@@ -1,5 +1,5 @@
 # ComfyUI-NodeReset
-An extension for ComyUI that allows resetting a node's inputs to their default values.
+An extension for ComyUI that allows resetting a node's inputs to their default values. 
 # Usage
 Right click any node and choose "Reset" from the context menu.
 # Installation
