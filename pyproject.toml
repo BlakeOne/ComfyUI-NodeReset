@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-nodereset"
+description = "An extension for ComyUI to allow resetting a node's inputs to their default values.\nNOTE:Right click any node and choose 'Reset' from the context menu."
+version = "1.0.0"
+license = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/BlakeOne/ComfyUI-NodeReset"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-NodeReset"
+Icon = ""
